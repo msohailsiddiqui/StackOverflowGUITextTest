@@ -9,6 +9,10 @@ public class ChangeText : MonoBehaviour
 	void Start()
 	{
 		racename = gameObject.GetComponent<GUIText>();
+		if (racename == null) 
+		{
+			Debug.LogError("GUIText component not found");
+		}
 		racename.text = "Human";
 	}
 	
