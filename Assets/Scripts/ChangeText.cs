@@ -14,7 +14,7 @@ public class ChangeText : MonoBehaviour
 	
 	void Update()
 	{
-		if (racenum == 1)
+		if (racenum == 1 && racenum != null)
 		{
 			racename = gameObject.GetComponent<GUIText>();
 			racename.text = "Human";
