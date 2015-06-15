@@ -19,7 +19,7 @@ public class ChangeText : MonoBehaviour
 			racename = gameObject.GetComponent<GUIText>();
 			racename.text = "Human";
 		}
-		if (racenum == 2)
+		if (racenum == 2 && racenum != null)
 		{
 			racename = gameObject.GetComponent<GUIText>();
 			racename.text = "Elf";
